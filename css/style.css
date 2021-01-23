@@ -1,0 +1,419 @@
+
+    body{
+        font-family: 'Raleway', sans-serif;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    h1{
+        color: #535353;
+        font-size: 50px;
+        font-weight: bold;
+        margin :0px 0px 0px 0px;
+    }
+
+    h2{
+        font-family: 'Great Vibes', cursive;
+        box-sizing: border-box;
+        color:rgb(83, 83, 83);
+        font-size : 36px;
+        text-align: left;
+        font-style:normal;
+        line-height: 50px;
+        font-weight:400;
+        margin-bottom:5px;
+    }
+    h3{
+        color: #555;
+        font-size: 16px;
+    }
+    p{
+        color :#757575;
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    *{
+        scroll-behavior: smooth;
+    }
+
+    .rowHead{
+        justify-content: flex-end !important;
+    }
+    .btn{
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: #e54c2a none repeat scroll 0 0;
+        color: #fff;
+        padding: 13px 35px;
+    }
+        
+    .btn:hover{
+        background-color:grey;
+        transition: 0.3s;
+    }
+    #header-sticky{
+        text-align: center;
+        background-color: white;
+        position:relative;
+        z-index: 99;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+        height: 90px;
+        margin-left : auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /*margin-right: -15px;*/
+        
+    }
+    .col{
+        width:100%;
+    }
+    .col-25{width :25%;}
+    .col-33{width :33.33%;}
+    .col-30{width :30%;}
+    .col-50{width :50%;}
+    .col-60{width :60%}
+    .col-70{width :70%;}
+    .col-75{width :75%;}
+
+    ul li{
+        display:inline;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    ul{
+        margin-top:30px;
+    }
+    #header-logo img{
+        position: relative;
+        max-width: 160px;
+        height: 145px;
+        cursor: pointer;
+    }
+    #header-logo{
+        padding-right: 0px;
+    }
+    #header-menu{
+        text-align: left;
+    
+    }
+    #header-menu a{
+        text-decoration: none;
+        color : black;
+        margin-right:20px;
+        border-bottom: solid 1px tomato;
+    }
+
+    /* Container dropdown */
+    #dropdown {
+        overflow: hidden;
+        text-align:center;
+    }
+
+    /* Change couleur en survolant les élements */
+    #header-menu a:hover,
+    #dropdown:hover{
+        color: rgb(255, 96, 4);
+        transition: 0.5s;
+    }
+
+    /* Contenu dropdown caché */
+    #dropdown #dropdown-contenu {
+        display: none;
+        position: absolute;
+        margin-top: 5px;
+        margin-left:350px;
+        background-color: rgb(241, 241, 241);
+        max-width: 170px;
+        z-index: 1;
+        border-radius: 5px;
+        padding: 10px 12px 20px 30px;
+    }
+
+    /* Lien dans dropdown */
+    #dropdown-contenu a {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        text-align: left;
+        color: black;
+        padding: 5px 20px 10px 5px;
+    }
+
+    #dropdown:hover #dropdown-contenu {
+        display: block;
+    }
+    span.material-icons {
+        margin-top: 30px;
+        margin-left: 100px;
+        cursor: pointer;
+    }
+    #menuMobile{
+        display: none;
+    }
+
+
+    #div1{
+        background-image:    url('../pics/div1.png');
+        background-size:     100% auto;                     
+        background-repeat:   no-repeat;
+        height: 550px;
+        align-items: center;
+    }
+    #firstText{
+        margin:auto;
+    }
+    .numbers{
+        color: #535353;
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        margin-bottom:20px;
+        cursor: pointer;
+    }
+    #div2{
+        height:auto;
+    }
+
+    #divAbout{
+        text-align: left;
+        padding:40px 20px 40px 20px;
+    }
+    #picDiv{
+        height: auto;
+        width: 100%;
+    }
+    #div3{
+        background-image:    url('../pics/div3.jpg');                 
+        background-repeat:   no-repeat; 
+        background-size: 100% auto;
+    }
+    #hDiv3, #hDiv4, #divTitle2 p{
+        text-align: center;
+    }
+    #divTitle img,#divTitle2 img{
+        display: block;
+        margin:auto;
+        margin-bottom: 20px;
+        
+    }
+    #divCadre{
+        background-color: transparent;
+        height: 500px;
+        margin: auto;
+    }
+    #divCadre p{
+        color: rgb(255, 96, 4);
+        font-size: 30px;
+    }
+    .plats{
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        display: inline-block;
+        width:30%;
+        margin:auto;
+    }
+    #dish1 img, #dish2 img, #dish3 img{
+        margin-top:40px;
+        width:100%;
+        height: auto;
+        cursor: pointer;
+    }
+    #div4{
+        padding-bottom: 50px;
+    }
+    #divVid{
+        justify-content: space-between;
+    }
+    #divVid iframe{
+        width: 48%;
+	border: none;
+    }
+    
+    #divCopyR{
+        width:100%;
+        height: 60px;
+        color:white;
+        background-color: #e54c2a;
+        text-align: center;
+        font-size: 13px;
+        margin:auto;
+    }
+    h5{
+        width: 100%;
+        text-align: center;
+    }
+    #btnScrollUp {
+        background: #e54c2a;
+        bottom: 70px;
+        color: #ffffff;
+        cursor: pointer;
+        height: 40px;
+        position: fixed;
+        right: 30px;
+        transform: rotate(45deg);
+        width: 40px;
+        z-index: 9999;
+    }
+    #arrow{
+        transform: rotate(-45deg);
+        margin:auto;
+    }
+
+@media all and (max-width: 1300px){
+    ul{
+        display:none;
+    }
+    #menuMobile{
+        display: block;
+    }
+    .material-icons{
+        margin-right: 10px;
+    }
+    #divMenu{
+        justify-content: flex-end;
+    }
+    #div1{
+        height: 500px;
+    }
+    #bgTitle{
+        display: none;
+    }
+    
+    .plats{
+        width: 32%;
+    }
+    #divCadre{
+        width:80%;
+    }
+    #div3{
+        height: 550px;
+        background-image:url(../pics/div3Tab.jpg);
+        background-color: #f1f1f1;
+    }
+    .col-75{
+        width: 90%;
+    }
+}
+@media all and (max-width: 958px){
+    #div1{
+        height: 370px;
+    }
+    #header-sticky{
+        height: 70px;
+    }
+    
+    #header-logo img{
+        height: 115px;
+    }
+    .material-icons {
+        margin-top: 25px !important;
+    }
+    #div1 p{
+        display: none;
+    }
+
+    #firstText h2{
+        font-size: 30px;
+    }
+    #divAbout{
+        width: 80%;
+    }
+
+    .material-icons {
+        margin-left: 50px !important;
+    }
+    #div1 p{
+        display: none;
+    }
+    #div1{
+        height: 250px;
+        background-size: 100% auto;
+    }
+    #firstText{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    #firstText h2{
+        margin-bottom: 20px;
+
+    }
+    .numbers{
+        display: none;
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 425px){
+    .material-icons {
+        margin-left: 50px !important;
+    }
+    #div1 p{
+        display: none;
+    }
+    #div1{
+        height: 250px;
+        background-size: 100% 250px;
+    }
+    #firstText{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    #firstText h2{
+        margin-bottom: 20px;
+
+    }
+    .numbers{
+        display: none;
+        font-size: 20px;
+    }
+    #div2 .col-50{
+        width: 100%;
+    }
+    #dish3{
+        display: none;
+    }
+    #divCadre{
+        width: 100%;
+    }
+    .plats{
+        width:45%;
+    }
+    #divVid iframe{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #btnScrollUp{
+        display: none;
+    }
+}
+@media all and (max-width: 375px){
+    .plats{
+        width: 90%;
+    }
+    #divCadre {
+        background-color: transparent;
+        height: 500px;
+        margin-top: -350px;
+    }
+    #div3{
+        height: 1000px;
+    }
+    #dish1{
+        margin-bottom: 20px;
+    }
+    #divTitle2{
+        width: 90%;
+    }
+}
+@media all and (max-width: 320px){
+#div1 .col-50{
+    width: 60%;
+}
+
+}

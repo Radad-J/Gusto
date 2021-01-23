@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive website</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href='css/style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div id="header-sticky">
+                    <div class="row rowHead">
+                        <div class="col-30" id="header-logo">
+                            <a href="index.html">
+                                <img src="pics/gusto.png" alt="gusto">
+                            </a>
+                        </div>
+                        <div class="col-70" id="header-menu">
+                            <div id="divMenu" class="row">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#div2">About</a></li>
+                                    <li><a href="#div3">Gallery</a></li>
+                                    <li><a href="pages/reservation.html">Reservation</a></li>
+                                    <li><a href="#div4">Blog</a></li>
+                                    <li id="dropdown"><a href="index.html">Pages</a>
+                                        <ul id="dropdown-contenu">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="pages/reservation.html">Reservation</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <span class="material-icons">search</span>
+                                </div>
+                                <div>
+                                    <span id="menuMobile" class="material-icons">menu</span>
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="div1" class="row">
+                <div id="firstText" class="col-50">
+                    <h2>Welcome To Gusto Restaurant</h2>
+                    <h1 id="bgTitle">LOVES HEALTHY FOOD</h1>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Pellentesque vel volutpat felis,
+                        eu condimentum. lorem ipsum dolor. lorem ipsum dolor sit amt.
+                    </p>
+                    <a class="btn" href="index.html">Order now</a>
+                </div>
+                
+                <div class="col">
+                    <div class="row">
+                        <div class="numbers">
+                            1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div2" style="align-items: center;justify-content: center;" class="row">
+                <div id="divAbout" class="col-33">
+                    <h2>About Gusto Restaurant</h2>
+                    <h3>Vestibulum quis elit eget neque porttitor no amet dolor. Proin pretiumss.</h3>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet dolor libero, eget loved dost venenatis mauris finibus dictum. Vestibulum quis elit eget neque porttitor no amet dolor.
+                        Proin pretium purus a lorem ornaresed lobortis pulvinar.<br>
+                        Integer laoreet mi id eros porta euismod. Suspendisse potenti. Nulla eros dost mauris, convallis et sem tempus, viverra hendrerit sapien Lorem amet, consectetur adipiscing elit. Donec aliquet dolor libero,
+                    </p>
+                    <!--Je voulais pas casser la tete en creant encore des pages donc j'ai mis le href à index pour les deux boutons -->
+                    <a class="btn" href="index.html">Read more</a>
+                </div>
+                <div  class="col-50">
+                    <img id="picDiv" src="pics/div2.png" alt="resto">
+                </div>
+            </div>
+
+            <div id="div3" class="row">
+                <div id="divTitle" class="col">
+                    <h2 id="hDiv3">Our Popular Dishes</h2>
+                    <img src="pics/decoTitle.png" alt="decoTitle">
+                </div>
+                <div id="divCadre" class="col-60">
+                    <div class="row">
+                        <div id="dish1" class="plats">
+                            <img src="pics/dishname1.png" alt="dishname1">
+                            <h3>Dish name Here</h3>
+                            <p>100€</p>
+                        </div>
+                        <div id="dish2" class="plats">
+                            <img src="pics/dishname2.png" alt="dishname2">
+                            <h3>Dish name Here</h3>
+                            <p>100€</p>
+                        </div>
+                        <div id="dish3" class="plats">
+                            <img src="pics/dishname3.png" alt="dishname3">
+                            <h3>Dish name Here</h3>
+                            <p>100€</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div id="div4" class="row">
+                <div id="divTitle2" class="col">
+                    <h2 id="hDiv4">Our Blog</h2>
+                    <img src="pics/decoTitle2.png" alt="decoTitle">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+                </div>
+                <div class="col-75">
+                    <div id="divVid" class="row">
+                            <iframe  height="315" src="https://www.youtube.com/embed/PgWONWvHmR0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  height="315" src="https://www.youtube.com/embed/YPv_1tCk8P0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <a class="row" id="btnScrollUp" href="#header-sticky">
+                <img id="arrow" src="pics/angle-up.png" alt="">
+            </a>
+            <footer>
+                <div id="divCopyR" class="row">
+                    <h5>CopyRight &copy; Gusto 2020. All Right Reserved. Created By <strong>Radad</strong></h5>
+                </div>
+            </footer>    
+        </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive website</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href='../css/styleReservation.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <div id="header-sticky">
+                <div class="row rowHead">
+                    <div class="col-30" id="header-logo">
+                        <a href="../index.html">
+                            <img src="../pics/gusto.png" alt="gusto">
+                        </a>
+                    </div>
+                    <div class="col-70" id="header-menu">
+                        <div id="divMenu" class="row">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../index.html#div2">About</a></li>
+                                <li><a href="../index.html#div3">Gallery</a></li>
+                                <li id="dropdown"><a>Pages</a>
+                                    <ul id="dropdown-contenu">
+                                        <li><a href="../index.html">Home</a></li>
+                                        <li><a href="./reservation.html">Reservation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../index.html#div4">Blog</a></li>
+                            </ul>
+                            <div>
+                                <span class="material-icons">search</span>
+                            </div>
+                            <div>
+                                <span id="menuMobile" class="material-icons"> menu</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="containerForm" class="row">
+            <div id="spaceForm" class="col-50">
+                <div id="cadreForm" class="row">
+                    <form class="col-75" id="frmReservation" action="#" method="post">
+                        <h3 class="col">Reservation Form</h3>
+                        <img  src="../pics/decoTitle2.png" alt="decoTitle">
+
+                        <input type="text" class="col" placeholder="Full name" >
+                        <input type="text" class="col" placeholder="Email adress">
+                        <input type="text" class="col" placeholder="Mobile Number">
+                        <select class="col">
+                            <option value="1" selected >&nbsp;Select date and time</option>
+                            <option value="3">26Dec-10.00pm</option>
+                            <option value="4">27Dec-10.00pm</option>
+                        </select>
+                        <div class="row">
+                            <button class="btn col-75">Reserve</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

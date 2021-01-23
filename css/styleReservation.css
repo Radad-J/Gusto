@@ -1,0 +1,257 @@
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin-top:0px;
+    margin-left:0px;
+    box-sizing: border-box;
+    margin: 0px;
+    background-image: url("../pics/backForm.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: #535353;
+    font-size: 50px;
+    font-weight: bold;
+    margin :0px 0px 0px 0px;
+}
+
+h2{
+    font-family: 'Great Vibes', cursive;
+    box-sizing: border-box;
+    color:rgb(83, 83, 83);
+    font-size : 36px;
+    text-align: left;
+    font-style:normal;
+    line-height: 50px;
+    font-weight:400;
+    margin-bottom:5px;
+}
+h3{
+    color: #555;
+    font-size: 16px;
+}
+p{
+    color :#757575;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.rowHead{
+    justify-content: flex-end !important;
+}
+.btn{
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #e54c2a none repeat scroll 0 0;
+    color: #fff;
+    padding: 13px 35px;
+    border:none;
+}
+    
+.btn:hover{
+    background-color:grey;
+    transition: 0.3s;
+}
+#header-sticky{
+    text-align: center;
+    background-color: white;
+    position:relative;
+    z-index: 99;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    height: 90px;
+    margin-left : auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*margin-right: -15px;*/
+    
+}
+.col{
+    width:100%;
+}
+.col-25{width :25%;}
+.col-33{width :33.33%;}
+.col-30{width :30%;}
+.col-50{width :50%;}
+.col-60{width :60%}
+.col-70{width :70%;}
+.col-75{width :75%;}
+
+ul li{
+    display:inline;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+ul{
+    margin-top:30px;
+}
+#divMenu{
+    justify-content: flex-start;
+}
+#header-logo img{
+    position: relative;
+    max-width: 160px;
+    height: 145px;
+    cursor: pointer;
+}
+#header-logo{
+    padding-right: 0px;
+}
+#header-menu{
+    text-align: left;
+
+}
+#header-menu a{
+    text-decoration: none;
+    color : black;
+    margin-right:20px;
+    border-bottom: solid 1px tomato;
+}
+
+/* Container dropdown */
+#dropdown {
+    overflow: hidden;
+    text-align:center;
+}
+
+/* Change couleur en survolant les élements */
+#header-menu a:hover,
+#dropdown:hover{
+    color: rgb(255, 96, 4);
+    transition: 0.5s;
+}
+
+/* Contenu dropdown caché */
+#dropdown #dropdown-contenu {
+    display: none;
+    position: absolute;
+    margin-top: 3px;
+    margin-left:140px;
+    background-color: rgb(241, 241, 241);
+    max-width: 170px;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 12px 20px 30px;
+}
+
+/* Lien dans dropdown */
+#dropdown-contenu a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    padding: 5px 20px 10px 5px;
+}
+
+#dropdown:hover #dropdown-contenu {
+    display: block;
+}
+span.material-icons {
+    margin-top: 30px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+#containerForm{
+    justify-content: flex-start;
+    align-items: center;
+    height: 700px;
+}
+
+#cadreForm{
+    
+    justify-content: flex-end;
+}
+#cadreForm img{
+    display: block;
+    margin:auto;
+    margin-top:-25px;
+    margin-bottom: 30px;
+}
+#cadreForm h3{
+    color: #535353;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Great Vibes",cursive;
+    font-weight: 400;    
+}
+#cadreForm button, #cadreForm input,#cadreForm select,#cadreForm option{
+    margin:auto;
+    margin-bottom: 20px;
+}
+#cadreForm input,#cadreForm option{
+    height: 35px;
+    border: solid 1px rgb(177, 177, 177);
+}
+#cadreForm select{
+    width:101%;
+    height: 35px;
+    border: solid 1px rgb(177, 177, 177);
+}
+#cadreForm button{
+    margin-top: 20px;
+}
+::placeholder {
+    color: rgb(153, 153, 153);
+    padding-left:10px;
+}
+#frmReservation{
+    background-color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    height: 500px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#menuMobile{
+    display: none;
+}
+
+@media all and (max-width : 1186px){
+    #divMenu ul{
+        display: none;
+    }
+    #menuMobile{
+        display: block;
+    }
+    #divMenu{
+        justify-content: flex-end;
+    }
+    #menuMobile {
+        margin-right: 20px;
+    }
+    body{
+        background-size: 100% 100%;
+    }
+}
+@media all and (max-width : 860px){
+    #spaceForm{
+        width: 100%;
+    }
+    #cadreForm{
+        justify-content: center;
+    }
+}
+@media all and (max-width : 455px){
+    #header-sticky{
+        height: 80px;
+    }
+    #header-logo img{
+        height: 130px;
+    }
+    #frmReservation{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    #menuMobile{
+        margin-left: 50px;
+    }
+  
+}
+
+
